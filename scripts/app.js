@@ -1,9 +1,9 @@
 var slider = {
-    slides:['images/level01.jpg','images/level02.jpg','images/level03.jpg',
-        'images/level04.jpg','images/level05.jpg'],
+    slides:['images/level1.jpg','images/level2.jpg','images/level3.jpg',
+        'images/level4.jpg','images/level5.jpg','images/level6.jpg'],
     frame: 0,
     set: function(image) {
-        document.getElementById("src").style.backgroundImage = "url(" + image + ")";
+        document.getElementById("picture").style.backgroundImage = "url(" + image + ")";
     },
     init: function() {
         this.set(this.slides[this.frame]);
@@ -23,5 +23,5 @@ var slider = {
     slider.init();
     setInterval(function() {
         slider.right();
-    },5000);
+    },12000);
 };
